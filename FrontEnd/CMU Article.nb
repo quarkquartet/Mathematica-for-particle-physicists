@@ -48,7 +48,6 @@ The options defined for the style below will be used at the Notebook level.\
 \>", "Text",ExpressionUUID->"728e3cf1-8102-466e-89b0-6791cd839a31"],
 
 Cell[StyleData["Notebook"],
- WindowToolbars->{"EditBar"},
  WindowSize->{240, 400},
  DockedCells->Dynamic[
    If[CurrentValue[ScreenStyleEnvironment] === "Working", 
