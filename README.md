@@ -33,8 +33,10 @@ Features of this repository includes:
 
   1. unzip this repository in a folder,
 
-  2. open `install.m` in Mathematica,
+  2. Install CMU fonts in the folder "CMU fonts". Method depends on your operation system.
 
-  3. click the `Run Package` button to the top right. It may ask you some questions. If it's asking for permissions, allow it. If it's asking for whether you want some features of FeynCalc, answer it according to what you want.
+  3. open `install.m` in Mathematica,
 
-  4. quit Mathematica and restart.
+  4. click the `Run Package` button to the top right. It may ask you some questions. If it's asking for permissions, allow it. If it's asking for whether you want some features of FeynCalc, answer it according to what you want.
+
+  5. quit Mathematica and restart.
