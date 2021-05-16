@@ -6,6 +6,10 @@
 (*FileNameJoin[{$UserBaseDirectory, "SystemFiles", "FrontEnd", "Palettes"}] *)
 
 
+(* ::Text:: *)
+(*Define Functions to overwrite directory and file*)
+
+
 FileOverwrite[file1_,file2_]:=
 	(If[FileType[file2]==File,DeleteFile[file2]];
 	CopyFile[file1,file2];)
@@ -41,29 +45,24 @@ FileOverwrite[FileNameJoin[{NotebookDirectory[],"FrontEnd","CMU Article.nb"}],
 		"SystemFiles", "FrontEnd", "StyleSheets","CMU Article.nb"}]];
 
 
+FileOverwrite[FileNameJoin[{NotebookDirectory[],"FrontEnd","XRef Palette.nb"}],
+	FileNameJoin[{$UserBaseDirectory, 
+		"SystemFiles", "FrontEnd", "Palettes","XRef Palette.nb"}]];
+
+
+FileOverwrite[FileNameJoin[{NotebookDirectory[],"FrontEnd","Cambria Article.nb"}],
+	FileNameJoin[{$UserBaseDirectory, 
+		"SystemFiles", "FrontEnd", "StyleSheets","Cambria Article.nb"}]];
+
+
 (* ::Text:: *)
 (*Install Packages*)
 
 
-DirectoryOverwrite[FileNameJoin[{NotebookDirectory[],"MatsubaraSum"}],
-	FileNameJoin[{$InstallationDirectory,"AddOns","ExtraPackages","MatsubaraSum"}]]
+(* ::Text:: *)
+(*FeynCalc and FeynArts:*)
 
 
-DirectoryOverwrite[FileNameJoin[{NotebookDirectory[],"DiagramEditor"}],
-	FileNameJoin[{$InstallationDirectory,"AddOns","ExtraPackages","DiagramEditor"}]]
+Import["https://raw.githubusercontent.com/FeynCalc/feyncalc/master/install.m"];
 
-
-(*DirectoryOverwrite[FileNameJoin[{NotebookDirectory[],"PauliAlgebra"}],
-	FileNameJoin[{$InstallationDirectory,"AddOns","ExtraPackages","PauliAlgebra"}]]*)
-
-
-(*DirectoryOverwrite[FileNameJoin[{NotebookDirectory[],"LoopIntegrate"}],
-	FileNameJoin[{$InstallationDirectory,"AddOns","ExtraPackages","LoopIntegrate"}]]*)
-
-
-DirectoryOverwrite[FileNameJoin[{NotebookDirectory[],"Themes"}],
-	FileNameJoin[{$InstallationDirectory,"AddOns","ExtraPackages","Themes"}]]
-
-
-DirectoryOverwrite[FileNameJoin[{NotebookDirectory[],"Toolkit"}],
-	FileNameJoin[{$InstallationDirectory,"AddOns","ExtraPackages","Toolkit"}]]
+InstallFeynCalc[]

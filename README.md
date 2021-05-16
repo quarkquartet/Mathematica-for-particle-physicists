@@ -1,32 +1,31 @@
-# Mathematica Packages for Physicists
+# Mathematica for Particle Physicists
 
-## Contents
+## Introduction
 
-This repository contains *Mathematica* packages and stylesheets that are useful to my daily research.
+This repository offers a quick, minimal setup of mathematica for particle physicists, inspired by [EverettYou/Mathematica-for-physics](https://github.com/EverettYou/Mathematica-for-physics). With comprehensive and detailed set up, this repository gives a fantastic experience of using mathematica if you are a condensed matter theorist.
 
-- Packages
+The repository in this link, though is much more greater than mine, has some deficits for me that I have to fix, includes:
 
-  - **PauliAlgebra**: symbolic handling the algebra and representation of Pauli operators
-  
-  - **LoopIntegrate**: performing loop integration in quantum field theory (with dimension regularization)
-  
-  - **MatsubaraSum**: performing Matsubara summation analytically
-  
-  - **DiagramEditor**: an interactive editor of Feynman diagrams (no diagrammatic evaluation)
-  
-  - **Themes**: a self-made plot theme for Mathematica, called "Academic" (see the StackExchange discussion [Is it possible to define a new PlotTheme?](https://mathematica.stackexchange.com/questions/54545/is-it-possible-to-define-a-new-plottheme))
-  
-  - **Toolkit**: miscellaneous functions, including `BZPlot` for plotting band structure, `tTr` for tensor network contraction, `ComplexMatrixPlot` for complex matrix visualization, `Pf` for matrix Pfaffian
-  
-- Stylesheets
+- These packages are designed for condensed matter theory, while they may not be widely used in particle physics. Some of which may conflict with the wide-used mathematica package, [FeynCalc](https://feyncalc.github.io/). I have to uninstall them.
+- The DiagramEditor is out of date since Mathematica v12.2. The function `Canvas[]` is now a new function of MMA itself. It reports error message every time you load it.
+- I do not like to toggle the toolbar and lock it for the stylesheet. I prefer to give the freedom to use toolbar or not to users.
+- Keybindings for the stylesheets are a little bit uncomfortable. I changed them slightly.
+- The academic theme, although pretty nice, changed the defined RGB colors in MMA. That's not a good idea for me.
+- Code assists, options after results, etc, are turned off. I need those features, bro...... (because I am a weak user...)
 
-  - **CMU Article**: a Mathematica style sheet based on Computer Modern Unicode fonts (the fonts need to be installed separately to the operating system, and the font files can be found in [./CMUfonts](https://github.com/EverettYou/Mathematica-for-physics/tree/master/CMUfonts))
-  
-- FrontEnd Configuration
+And, most importantly, that repository is not being maintained anymore.
 
-For more details, please read the **User's Guide** ([Mathematica](https://everettyou.github.io/teaching/Mathematica/Guide.nb)) ([PDF](https://everettyou.github.io/teaching/Mathematica/Guide.pdf))
+## Features
 
-## Installation 
+Features of this repository includes:
+
+- Academic theme without changing any MMA color definitions. Main reference is [StackExchange: Is it possible to define a new PlotTheme?](https://mathematica.stackexchange.com/questions/54545/is-it-possible-to-define-a-new-plottheme), which is the main part of [Mathematica-for-Physicists/Theme](https://github.com/EverettYou/Mathematica-for-physics/tree/master/Themes). The author of this code is exactly [EverettYou](https://github.com/EverettYou/).
+- FeynCalc and FeynArts installation.
+- [Cambria Article stylesheet](https://github.com/EverettYou/CambriaArticle).
+- [CMU Article stylesheet](https://github.com/EverettYou/Mathematica-for-physics/blob/master/FrontEnd/CMU%20Article.nb): a beautiful, modern stylesheet. The required font, the CMU font, has to be installed separately.
+- Some option settings, referenced from [EverettYou/Mathematica-for-physics](https://github.com/EverettYou/Mathematica-for-physics).
+
+## Installation
 
 - To download, click the "download ZIP" button to the right -->
 
@@ -36,7 +35,6 @@ For more details, please read the **User's Guide** ([Mathematica](https://everet
 
   2. open `install.m` in Mathematica,
 
-  3. click the `Run Package` button to the top right,
+  3. click the `Run Package` button to the top right. It may ask you some questions. If it's asking for permissions, allow it. If it's asking for whether you want some features of FeynCalc, answer it according to what you want.
 
   4. quit Mathematica and restart.
-
