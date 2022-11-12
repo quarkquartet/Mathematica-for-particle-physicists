@@ -1,5 +1,9 @@
 (* ::Package:: *)
 
+(* ::Section:: *)
+(*Preparing*)
+
+
 (* ::Text:: *)
 (*Palettes directory:*)
 (*FileNameJoin[{$BaseDirectory, "SystemFiles", "FrontEnd", "Palettes"}] *)
@@ -20,7 +24,7 @@ DirectoryOverwrite[dir1_,dir2_]:=
 	CopyDirectory[dir1,dir2];)
 
 
-(* ::Text:: *)
+(* ::Section:: *)
 (*Configure global preference. *)
 
 
@@ -55,14 +59,37 @@ FileOverwrite[FileNameJoin[{NotebookDirectory[],"FrontEnd","Cambria Article.nb"}
 		"SystemFiles", "FrontEnd", "StyleSheets","Cambria Article.nb"}]];
 
 
-(* ::Text:: *)
+(* ::Section:: *)
 (*Install Packages*)
 
 
-(* ::Text:: *)
+(* ::Subsection:: *)
 (*FeynCalc and FeynArts:*)
 
 
 Import["https://raw.githubusercontent.com/FeynCalc/feyncalc/master/install.m"];
 
 InstallFeynCalc[]
+
+
+(* ::Subsection:: *)
+(*GroupMath*)
+
+
+file=URLDownload["https://renatofonseca.net/groupmath/ProgramVersions/GroupMath-1.1.2.zip",FileNameJoin[{$UserBaseDirectory,"Applications","GroupMath.zip"}]];
+ExtractArchive[file,FileNameJoin[{$UserBaseDirectory,"Applications"}]];
+DeleteFile[file];
+
+
+(* ::Subsection:: *)
+(*DRalgo*)
+
+
+(* ::Text:: *)
+(*Compute thermal effective potential from dimensional reduction method at 2-loop*)
+
+
+file=URLDownload["https://github.com/DR-algo/DRalgo/archive/refs/tags/v1.0.1-beta.zip",FileNameJoin[{$UserBaseDirectory,"Applications","DRalgo.zip"}]];
+extracted=ExtractArchive[file,FileNameJoin[{$UserBaseDirectory,"Applications"}]];
+DeleteFile[file];
+RenameDirectory[extracted[[1]],FileNameJoin[{$UserBaseDirectory,"Applications","DRalgo"}]];
