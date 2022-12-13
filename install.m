@@ -59,6 +59,16 @@ FileOverwrite[FileNameJoin[{NotebookDirectory[],"FrontEnd","Cambria Article.nb"}
 		"SystemFiles", "FrontEnd", "StyleSheets","Cambria Article.nb"}]];
 
 
+FileOverwrite[FileNameJoin[{NotebookDirectory[],"FrontEnd","Source Article.nb"}],
+	FileNameJoin[{$UserBaseDirectory, 
+		"SystemFiles", "FrontEnd", "StyleSheets","Source Article.nb"}]];
+
+
+FileOverwrite[FileNameJoin[{NotebookDirectory[],"FrontEnd","Default-Modified.nb"}],
+	FileNameJoin[{$UserBaseDirectory, 
+		"SystemFiles", "FrontEnd", "StyleSheets","Default-Modified.nb"}]];
+
+
 (* ::Section:: *)
 (*Install Packages*)
 

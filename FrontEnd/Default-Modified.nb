@@ -1,0 +1,158 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5727,        150]
+NotebookOptionsPosition[      3649,        112]
+NotebookOutlinePosition[      4066,        128]
+CellTagsIndexPosition[      4023,        125]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[StyleData[StyleDefinitions -> "Default.nb"],ExpressionUUID->"0f1a5822-ec3c-4ce0-9e06-61b5584d3c84"],
+
+Cell[StyleData["Input"],
+ MenuCommandKey:>"7",
+ FontFamily->"Source Code Pro",
+ FontSize->13,
+ FontWeight->"Regular",
+ FontSlant->"Plain",
+ PrivateFontOptions->{
+ "FontPostScriptName"->
+  "Automatic"},ExpressionUUID->"968f0b8e-7d36-4f2b-9cdb-3059c266a97a"],
+
+Cell[StyleData["Title"],
+ MenuCommandKey:>"",ExpressionUUID->"d69c619e-57f3-4ff0-9841-890c1c85b80c"],
+
+Cell[StyleData["Subtitle"],
+ MenuCommandKey:>"",ExpressionUUID->"5a7c25e9-e7d7-466f-be6f-17be8c34ec9d"],
+
+Cell[StyleData["Chapter"],
+ MenuCommandKey:>"",ExpressionUUID->"e56f619d-ba4f-4614-9353-368845b793b0"],
+
+Cell[StyleData["Section"],
+ MenuCommandKey:>"1",ExpressionUUID->"741a3ec0-a410-4516-ab48-6359116ce223"],
+
+Cell[StyleData["Subsection"],
+ MenuCommandKey:>"2",ExpressionUUID->"be74b326-45fc-4c19-b73e-6bfaabe924ac"],
+
+Cell[StyleData["Subsubsection"],
+ MenuCommandKey:>"3",ExpressionUUID->"aa2d6a2f-f3dd-40dd-ac52-efaa5edc817d"],
+
+Cell[StyleData["Text"],
+ MenuCommandKey:>"5",ExpressionUUID->"daa0b452-022f-4739-84e6-963638520b30"],
+
+Cell[StyleData["InlineFormula", StyleDefinitions -> StyleData["Text"]],
+ CellMargins->{{10, 4}, {0, 8}},
+ StripStyleOnPaste->True,
+ DefaultFormatType->"TraditionalForm",
+ HyphenationOptions->{"HyphenationCharacter"->"\[Continuation]"},
+ LanguageCategory->"Formula",
+ ScriptLevel->1,
+ SingleLetterItalics->True,
+ FontFamily->"Times New Roman",
+ FontSize->16,
+ FontWeight->"Regular",
+ FontSlant->"Plain",
+ PrivateFontOptions->{"FontPostScriptName"->"Automatic"},
+ Background->GrayLevel[
+  1],ExpressionUUID->"939237b3-3f94-44cc-8bb3-4bafcf03a1af"],
+
+Cell[StyleData["DisplayFormula", StyleDefinitions -> StyleData["Text"]],
+ CellMargins->{{100, 20}, {7, 7}},
+ CellGroupingRules->{"GroupTogetherGrouping", 20000},
+ StripStyleOnPaste->True,
+ DefaultFormatType->"TraditionalForm",
+ HyphenationOptions->{"HyphenationCharacter"->"\[Continuation]"},
+ LanguageCategory->"Formula",
+ ScriptLevel->0,
+ SingleLetterItalics->True,
+ MenuSortingValue->1720,
+ MenuCommandKey:>"4",
+ FontFamily->"Times New Roman",
+ FontSize->16,
+ FontWeight->"Regular",
+ FontSlant->"Plain",
+ PrivateFontOptions->{"FontPostScriptName"->"Automatic"},
+ Background->GrayLevel[
+  1],ExpressionUUID->"f07b7780-56d5-4156-b593-7301f3c54751"],
+
+Cell[StyleData["DisplayFormulaNumbered", StyleDefinitions -> StyleData["Text"]
+ ],
+ CellMargins->{{100, 20}, {7, 7}},
+ StripStyleOnPaste->True,
+ CellFrameLabels->{{None, 
+    Cell[
+     TextData[{"(", 
+       CounterBox["DisplayFormulaNumbered"], ")"}]]}, {None, None}},
+ DefaultFormatType->"TraditionalForm",
+ HyphenationOptions->{"HyphenationCharacter"->"\[Continuation]"},
+ LanguageCategory->"Formula",
+ ScriptLevel->0,
+ SingleLetterItalics->True,
+ CounterIncrements->"DisplayFormulaNumbered",
+ MenuSortingValue->1740,
+ MenuCommandKey:>"",
+ FontFamily->"Times New Roman",
+ FontSize->16,
+ FontWeight->"Regular",
+ FontSlant->"Plain",
+ PrivateFontOptions->{"FontPostScriptName"->"Automatic"},
+ Background->GrayLevel[
+  1],ExpressionUUID->"ff32c915-c1ed-431b-b455-d0ce9a49e15f"]
+},
+WindowSize->{808, 911},
+WindowMargins->{{345, Automatic}, {51, Automatic}},
+FrontEndVersion->"13.0 for Mac OS X x86 (64-bit) (February 4, 2022)",
+StyleDefinitions->"PrivateStylesheetFormatting.nb",
+ExpressionUUID->"53fa495c-1765-4342-8713-7ce478ccc7d4"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 104, 0, 31, 49, 0, "StyleData", "StyleDefinitions", "",ExpressionUUID->"0f1a5822-ec3c-4ce0-9e06-61b5584d3c84"],
+Cell[665, 22, 256, 8, 46, 24, 0, "StyleData", "Input", "All",ExpressionUUID->"968f0b8e-7d36-4f2b-9cdb-3059c266a97a",
+ MenuCommandKey:>"7"],
+Cell[924, 32, 100, 1, 113, 24, 0, "StyleData", "Title", "All",ExpressionUUID->"d69c619e-57f3-4ff0-9841-890c1c85b80c",
+ MenuCommandKey:>""],
+Cell[1027, 35, 103, 1, 68, 27, 0, "StyleData", "Subtitle", "All",ExpressionUUID->"5a7c25e9-e7d7-466f-be6f-17be8c34ec9d",
+ MenuCommandKey:>""],
+Cell[1133, 38, 102, 1, 84, 26, 0, "StyleData", "Chapter", "All",ExpressionUUID->"e56f619d-ba4f-4614-9353-368845b793b0",
+ MenuCommandKey:>""],
+Cell[1238, 41, 103, 1, 68, 26, 0, "StyleData", "Section", "All",ExpressionUUID->"741a3ec0-a410-4516-ab48-6359116ce223",
+ MenuCommandKey:>"1"],
+Cell[1344, 44, 106, 1, 53, 29, 0, "StyleData", "Subsection", "All",ExpressionUUID->"be74b326-45fc-4c19-b73e-6bfaabe924ac",
+ MenuCommandKey:>"2"],
+Cell[1453, 47, 109, 1, 52, 32, 0, "StyleData", "Subsubsection", "All",ExpressionUUID->"aa2d6a2f-f3dd-40dd-ac52-efaa5edc817d",
+ MenuCommandKey:>"3"],
+Cell[1565, 50, 100, 1, 46, 23, 0, "StyleData", "Text", "All",ExpressionUUID->"daa0b452-022f-4739-84e6-963638520b30",
+ MenuCommandKey:>"5"],
+Cell[1668, 53, 545, 14, 42, 71, 0, "StyleData", "InlineFormula", "All",ExpressionUUID->"939237b3-3f94-44cc-8bb3-4bafcf03a1af"],
+Cell[2216, 69, 649, 17, 48, 72, 0, "StyleData", "DisplayFormula", "All",ExpressionUUID->"f07b7780-56d5-4156-b593-7301f3c54751",
+ MenuSortingValue->1720,
+ MenuCommandKey:>"4"],
+Cell[2868, 88, 777, 22, 48, 82, 1, "StyleData", "DisplayFormulaNumbered", "All",ExpressionUUID->"ff32c915-c1ed-431b-b455-d0ce9a49e15f",
+ CounterIncrements->"DisplayFormulaNumbered",
+ MenuSortingValue->1740,
+ MenuCommandKey:>""]
+}
+]
+*)
+
