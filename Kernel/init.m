@@ -1,5 +1,13 @@
 (* ::Package:: *)
 
+(* ::Title:: *)
+(*User initialization file*)
+
+
+(* ::Section:: *)
+(*Academic Plot Theme*)
+
+
 (** User Mathematica initialization file **)
 (* ===== Academic Plot Theme ===== *)
 
@@ -58,3 +66,6 @@ resolvePlotTheme["SmallOpenMarkers",def:_String]:=Themes`SetWeight[{PlotMarkers-
 End[];
 $PlotTheme="Academic";(*Set to default plot theme*)
 
+
+
+<<PlotFunctions`
