@@ -22,16 +22,16 @@ resolvePlotTheme["Academic",def:_String]:=Themes`SetWeight[Join[resolvePlotTheme
 (* Academic figures are framed by default. *)
 resolvePlotTheme["AcademicFrame",def:_String]:=Themes`SetWeight[Join[{Axes->False,Frame->True},resolvePlotTheme["AcademicFrame2D",def]],$ComponentWeight];
 (* Cases with axes also. *)
-resolvePlotTheme["AcademicFrame",def:"Plot"|"ListPlot"|"ListLinePlot"|"ListStepPlot"|"PolarPlot"|"ListPolarPlot"|"PairedBarChart"|"PairedHistogram"]:=Themes`SetWeight[Join[{Axes->True,Frame->True},resolvePlotTheme["AcademicFrame2D",def]],$ComponentWeight];
+resolvePlotTheme["AcademicFrame",def:"Plot"|"ListPlot"|"ListLinePlot"|"ListStepPlot"|"PolarPlot"|"ListPolarPlot"|"PairedBarChart"|"PairedHistogram"]:=Themes`SetWeight[Join[{Axes->False,Frame->True},resolvePlotTheme["AcademicFrame2D",def]],$ComponentWeight];
 (* Frame not specified,but MeshStyle specified to be thin and light. *)
 resolvePlotTheme["AcademicFrame",def:"ArrayPlot"|"MatrixPlot"]:=Themes`SetWeight[Join[{MeshStyle->Directive[AbsoluteThickness[0.5],Opacity[0.25]]},resolvePlotTheme["AcademicFrame2D",def]],$ComponentWeight];
 (* Charts are not framed. *)
 resolvePlotTheme["AcademicFrame",def:"BarChart"|"PieChart"|"RectangleChart"|"SectorChart"|"CandlestickChart"|"KagiChart"|"LineBreakChart"|"PointFigureChart"|"RenkoChart"|"InteractiveTradingChart"|"TradingChart"|"NumberLinePlot"|"TimelinePlot"|"WordCloud"]:=resolvePlotTheme["AcademicFrame2D",def];
 (* [ Specific Features for 3D Plots ] *)
 (* Front axes back box. *)
-resolvePlotTheme["AcademicFrame",def:_String/;StringMatchQ[def,___~~"3D"]]:=Themes`SetWeight[Join[{Axes->True,AxesEdge->{{-1,-1},{1,-1},{-1,-1}},Boxed->{Left,Bottom,Back}},resolvePlotTheme["AcademicFrame3D",def]],$ComponentWeight];
+resolvePlotTheme["AcademicFrame",def:_String/;StringMatchQ[def,___~~"3D"]]:=Themes`SetWeight[Join[{Axes->False,AxesEdge->{{-1,-1},{1,-1},{-1,-1}},Boxed->{Left,Bottom,Back}},resolvePlotTheme["AcademicFrame3D",def]],$ComponentWeight];
 (* Front box back axes. *)
-resolvePlotTheme["AcademicFrame","ChromaticityPlot3D"]:=Themes`SetWeight[Join[{Axes->True,AxesEdge->{{-1,-1},{-1,-1},{-1,1}},Boxed->{Left,Top,Front}},resolvePlotTheme["AcademicFrame3D","ChromaticityPlot3D"]],$ComponentWeight];
+resolvePlotTheme["AcademicFrame","ChromaticityPlot3D"]:=Themes`SetWeight[Join[{Axes->False,AxesEdge->{{-1,-1},{-1,-1},{-1,1}},Boxed->{Left,Top,Front}},resolvePlotTheme["AcademicFrame3D","ChromaticityPlot3D"]],$ComponentWeight];
 (* Chart3Ds are not boxed. *)
 resolvePlotTheme["AcademicFrame",def:"BarChart3D"|"PieChart3D"|"RectangleChart3D"|"SectorChart3D"]:=resolvePlotTheme["AcademicFrame3D",def];
 (* [ Common Axes Features ] *)
