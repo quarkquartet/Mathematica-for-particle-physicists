@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5727,        150]
-NotebookOptionsPosition[      3649,        112]
-NotebookOutlinePosition[      4066,        128]
-CellTagsIndexPosition[      4023,        125]
+NotebookDataLength[      6076,        160]
+NotebookOptionsPosition[      3877,        121]
+NotebookOutlinePosition[      4294,        137]
+CellTagsIndexPosition[      4251,        134]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -23,7 +23,7 @@ Cell[StyleData[StyleDefinitions -> "Default.nb"],ExpressionUUID->"0f1a5822-ec3c-
 Cell[StyleData["Input"],
  MenuCommandKey:>"7",
  FontFamily->"Source Code Pro",
- FontSize->13,
+ FontSize->14,
  FontWeight->"Regular",
  FontSlant->"Plain",
  PrivateFontOptions->{
@@ -108,11 +108,20 @@ Cell[StyleData["DisplayFormulaNumbered", StyleDefinitions -> StyleData["Text"]
  FontSlant->"Plain",
  PrivateFontOptions->{"FontPostScriptName"->"Automatic"},
  Background->GrayLevel[
-  1],ExpressionUUID->"ff32c915-c1ed-431b-b455-d0ce9a49e15f"]
+  1],ExpressionUUID->"ff32c915-c1ed-431b-b455-d0ce9a49e15f"],
+
+Cell[StyleData["Output"],
+ FontFamily->"Times",
+ FontSize->16,
+ FontWeight->"Regular",
+ FontSlant->"Plain",
+ PrivateFontOptions->{
+ "FontPostScriptName"->
+  "Automatic"},ExpressionUUID->"3c3c5a8c-546e-4336-b5da-04b5b74f57b8"]
 },
 WindowSize->{808, 911},
-WindowMargins->{{345, Automatic}, {51, Automatic}},
-FrontEndVersion->"13.0 for Mac OS X x86 (64-bit) (February 4, 2022)",
+WindowMargins->{{344, Automatic}, {52, Automatic}},
+FrontEndVersion->"13.2 for Mac OS X x86 (64-bit) (January 30, 2023)",
 StyleDefinitions->"PrivateStylesheetFormatting.nb",
 ExpressionUUID->"53fa495c-1765-4342-8713-7ce478ccc7d4"
 ]
@@ -128,7 +137,7 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 104, 0, 31, 49, 0, "StyleData", "StyleDefinitions", "",ExpressionUUID->"0f1a5822-ec3c-4ce0-9e06-61b5584d3c84"],
-Cell[665, 22, 256, 8, 46, 24, 0, "StyleData", "Input", "All",ExpressionUUID->"968f0b8e-7d36-4f2b-9cdb-3059c266a97a",
+Cell[665, 22, 256, 8, 47, 24, 0, "StyleData", "Input", "All",ExpressionUUID->"968f0b8e-7d36-4f2b-9cdb-3059c266a97a",
  MenuCommandKey:>"7"],
 Cell[924, 32, 100, 1, 113, 24, 0, "StyleData", "Title", "All",ExpressionUUID->"d69c619e-57f3-4ff0-9841-890c1c85b80c",
  MenuCommandKey:>""],
@@ -151,7 +160,8 @@ Cell[2216, 69, 649, 17, 48, 72, 0, "StyleData", "DisplayFormula", "All",Expressi
 Cell[2868, 88, 777, 22, 48, 82, 1, "StyleData", "DisplayFormulaNumbered", "All",ExpressionUUID->"ff32c915-c1ed-431b-b455-d0ce9a49e15f",
  CounterIncrements->"DisplayFormulaNumbered",
  MenuSortingValue->1740,
- MenuCommandKey:>""]
+ MenuCommandKey:>""],
+Cell[3648, 112, 225, 7, 49, 25, 0, "StyleData", "Output", "All",ExpressionUUID->"3c3c5a8c-546e-4336-b5da-04b5b74f57b8"]
 }
 ]
 *)
