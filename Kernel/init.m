@@ -36,8 +36,8 @@ resolvePlotTheme["AcademicFrame","ChromaticityPlot3D"]:=Themes`SetWeight[Join[{A
 resolvePlotTheme["AcademicFrame",def:"BarChart3D"|"PieChart3D"|"RectangleChart3D"|"SectorChart3D"]:=resolvePlotTheme["AcademicFrame3D",def];
 (* [ Common Axes Features ] *)
 (* Mathematica's working theme:axes and frames too thin,terribly grayish,and tick/label font too small,but grids too thick.All these are fixed in the new theme. *)
-resolvePlotTheme["AcademicFrame2D",_]:=Themes`SetWeight[{AxesStyle->Directive[AbsoluteThickness[1],monoColor,FontSize->14],FrameStyle->Directive[AbsoluteThickness[1],monoColor,FontSize->14],TicksStyle->Directive[monoColor,FontSize->12],FrameTicksStyle->Directive[monoColor,FontSize->12],GridLinesStyle->Directive[AbsoluteThickness[0.5],Opacity[0.5]]},$ComponentWeight];
-resolvePlotTheme["AcademicFrame3D",_]:=Themes`SetWeight[{AxesStyle->Directive[AbsoluteThickness[1],monoColor,FontSize->14],TicksStyle->Directive[monoColor,FontSize->12],BoxStyle->monoColor},$ComponentWeight];
+resolvePlotTheme["AcademicFrame2D",_]:=Themes`SetWeight[{ImageSize->340,Background->White,LabelStyle->Directive[Background->White],BaseStyle->Directive[FontSize->20,FontFamily->"Times",InsetBoxOptions->Directive[Background->White]],AxesStyle->Directive[AbsoluteThickness[1],monoColor,FontSize->20,FontFamily->"Times"],FrameStyle->Directive[AbsoluteThickness[1],monoColor,FontSize->20,FontFamily->"Times"],TicksStyle->Directive[monoColor,FontSize->20,FontFamily->"Times"],FrameTicksStyle->Directive[monoColor,FontSize->20,FontFamily->"Times"],GridLinesStyle->Directive[AbsoluteThickness[0.5],Opacity[0.5]]},$ComponentWeight];
+resolvePlotTheme["AcademicFrame3D",_]:=Themes`SetWeight[{ImageSize->340,Background->White,LabelStyle->Directive[Background->White],BaseStyle->Directive[FontSize->20,FontFamily->"Times",InsetBoxOptions->Directive[Background->White]],AxesStyle->Directive[AbsoluteThickness[1],monoColor,FontSize->20,FontFamily->"Times"],TicksStyle->Directive[monoColor,FontSize->20,FontFamily->"Times"],BoxStyle->monoColor},$ComponentWeight];
 
 (* ----- Size Features ----- *)
 (* 2D plots 180 pts. *)
@@ -51,10 +51,10 @@ resolvePlotTheme["Figure","NumberLinePlot"|"TimelinePlot"]:={};
 
 (* ----- Style Features ----- *)
 (* Use absolute size. *)
-resolvePlotTheme["AcademicStyle",def:_String]:=Themes`SetWeight[{"DefaultPlotStyle"->Directive[AbsolutePointSize[4],AbsoluteThickness[1.5]],MeshStyle->Directive[monoColor,AbsoluteThickness[1]],"DefaultBoundaryStyle"->Directive[monoColor]},$LineThicknessWeight];
+resolvePlotTheme["AcademicStyle",def:_String]:=Themes`SetWeight[{BaseStyle->{Directive[InsetBoxOptions->Directive[Background->White]]},LabelStyle->Directive[Background->White],"DefaultPlotStyle"->Directive[AbsolutePointSize[4],AbsoluteThickness[1.5]],MeshStyle->Directive[monoColor,AbsoluteThickness[1]],"DefaultBoundaryStyle"->Directive[monoColor]},$LineThicknessWeight];
 (* Special cases *)
-resolvePlotTheme["AcademicStyle","ContourPlot"]:=Themes`SetWeight[{ContourStyle->Directive[Opacity[1],AbsoluteThickness[0.8]],ExclusionsStyle->{None,Directive[Black,AbsoluteThickness[1]]},"DefaultPlotStyle"->Directive[AbsolutePointSize[4],AbsoluteThickness[1]],MeshStyle->Directive[monoColor,AbsoluteThickness[1]],"DefaultBoundaryStyle"->Directive[monoColor]},$LineThicknessWeight];
-resolvePlotTheme["AcademicStyle","ComplexPlot"]:=Themes`SetWeight[{BoundaryStyle->AbsoluteThickness[1],"DefaultPlotStyle"->Directive[AbsolutePointSize[4],AbsoluteThickness[1]],MeshStyle->Directive[monoColor,AbsoluteThickness[1]],"DefaultBoundaryStyle"->Directive[monoColor]},$LineThicknessWeight];
+resolvePlotTheme["AcademicStyle","ContourPlot"]:=Themes`SetWeight[{BaseStyle->{Directive[InsetBoxOptions->Directive[Background->White]]},ContourStyle->Directive[Opacity[1],AbsoluteThickness[0.8]],LabelStyle->Directive[Background->White],ExclusionsStyle->{None,Directive[Black,AbsoluteThickness[1]]},"DefaultPlotStyle"->Directive[AbsolutePointSize[4],AbsoluteThickness[1]],MeshStyle->Directive[monoColor,AbsoluteThickness[1]],"DefaultBoundaryStyle"->Directive[monoColor]},$LineThicknessWeight];
+resolvePlotTheme["AcademicStyle","ComplexPlot"]:=Themes`SetWeight[{BaseStyle->{Directive[InsetBoxOptions->Directive[Background->White]]},BoundaryStyle->AbsoluteThickness[1],LabelStyle->Directive[Background->White],"DefaultPlotStyle"->Directive[AbsolutePointSize[4],AbsoluteThickness[1]],MeshStyle->Directive[monoColor,AbsoluteThickness[1]],"DefaultBoundaryStyle"->Directive[monoColor]},$LineThicknessWeight];
 
 
 (* ----- Point Marker Features ----- *)
@@ -65,7 +65,7 @@ resolvePlotTheme["SmallOpenMarkers",def:_String]:=Themes`SetWeight[{PlotMarkers-
 (* ----- Deploy Plot Theme ----- *)
 End[];
 $PlotTheme="Academic";(*Set to default plot theme*)
-
+SetOptions[Plot, LabelStyle -> Directive[Background -> White]];
 
 
 <<PlotFunctions`

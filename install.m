@@ -59,9 +59,14 @@ FileOverwrite[FileNameJoin[{NotebookDirectory[],"FrontEnd","Cambria Article.nb"}
 		"SystemFiles", "FrontEnd", "StyleSheets","Cambria Article.nb"}]];
 
 
-FileOverwrite[FileNameJoin[{NotebookDirectory[],"FrontEnd","Source Article.nb"}],
+FileOverwrite[FileNameJoin[{NotebookDirectory[],"FrontEnd","Source Article Serif.nb"}],
 	FileNameJoin[{$UserBaseDirectory, 
-		"SystemFiles", "FrontEnd", "StyleSheets","Source Article.nb"}]];
+		"SystemFiles", "FrontEnd", "StyleSheets","Source Article Serif.nb"}]];
+
+
+FileOverwrite[FileNameJoin[{NotebookDirectory[],"FrontEnd","Source Article Sans.nb"}],
+	FileNameJoin[{$UserBaseDirectory, 
+		"SystemFiles", "FrontEnd", "StyleSheets","Source Article Sans.nb"}]];
 
 
 FileOverwrite[FileNameJoin[{NotebookDirectory[],"FrontEnd","Default-Modified.nb"}],
@@ -80,6 +85,23 @@ FileOverwrite[FileNameJoin[{NotebookDirectory[],"FrontEnd","Default-Modified.nb"
 Import["https://raw.githubusercontent.com/FeynCalc/feyncalc/master/install.m"];
 
 InstallFeynCalc[]
+
+
+(* ::Subsection:: *)
+(*FeynHelper*)
+
+
+Import["https://raw.githubusercontent.com/FeynCalc/feynhelpers/master/install.m"]
+InstallFeynHelpers[]
+
+
+(* ::Subsection:: *)
+(*Package-X*)
+
+
+file=URLDownload["https://mule-tools.gitlab.io/package-x/downloads/X-2.1.1-patched-2.zip",FileNameJoin[{$UserBaseDirectory,"Applications","Package-X.zip"}]];
+extracted=ExtractArchive[file,FileNameJoin[{$UserBaseDirectory,"Applications"}]];
+DeleteFile[file];
 
 
 (* ::Subsection:: *)
@@ -103,3 +125,12 @@ file=URLDownload["https://github.com/DR-algo/DRalgo/archive/refs/tags/v1.0.1-bet
 extracted=ExtractArchive[file,FileNameJoin[{$UserBaseDirectory,"Applications"}]];
 DeleteFile[file];
 RenameDirectory[extracted[[1]],FileNameJoin[{$UserBaseDirectory,"Applications","DRalgo"}]];
+
+
+(* ::Subsection:: *)
+(*Plot Functions*)
+
+
+FileOverwrite[FileNameJoin[{NotebookDirectory[],"Functions","PlotFunctions.wl"}],
+	FileNameJoin[{$UserBaseDirectory, 
+		"Applications","PlotFunctions.wl"}]];
