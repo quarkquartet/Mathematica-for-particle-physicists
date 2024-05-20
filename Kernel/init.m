@@ -36,8 +36,8 @@ resolvePlotTheme["AcademicFrame","ChromaticityPlot3D"]:=Themes`SetWeight[Join[{A
 resolvePlotTheme["AcademicFrame",def:"BarChart3D"|"PieChart3D"|"RectangleChart3D"|"SectorChart3D"]:=resolvePlotTheme["AcademicFrame3D",def];
 (* [ Common Axes Features ] *)
 (* Mathematica's working theme:axes and frames too thin,terribly grayish,and tick/label font too small,but grids too thick.All these are fixed in the new theme. *)
-resolvePlotTheme["AcademicFrame2D",_]:=Themes`SetWeight[{ImageSize->400,Background->White,LabelStyle->Directive[Background->White],BaseStyle->Directive[FontSize->20,FontFamily->"CMU Serif",InsetBoxOptions->Directive[Background->White]],AxesStyle->Directive[AbsoluteThickness[1],monoColor,FontSize->20,FontFamily->"CMU Serif"],FrameStyle->Directive[AbsoluteThickness[1],monoColor,FontSize->20,FontFamily->"CMU Serif"],TicksStyle->Directive[monoColor,FontSize->20,FontFamily->"CMU Serif"],FrameTicksStyle->Directive[monoColor,FontSize->20,FontFamily->"CMU Serif"],GridLinesStyle->Directive[AbsoluteThickness[0.5],Opacity[0.5]]},$ComponentWeight];
-resolvePlotTheme["AcademicFrame3D",_]:=Themes`SetWeight[{ImageSize->400,Background->White,LabelStyle->Directive[Background->White],BaseStyle->Directive[FontSize->20,FontFamily->"CMU Serif",InsetBoxOptions->Directive[Background->White]],AxesStyle->Directive[AbsoluteThickness[1],monoColor,FontSize->20,FontFamily->"CMU Serif"],TicksStyle->Directive[monoColor,FontSize->20,FontFamily->"CMU Serif"],BoxStyle->monoColor},$ComponentWeight];
+resolvePlotTheme["AcademicFrame2D",_]:=Themes`SetWeight[{ImageSize->500,Background->White,LabelStyle->Directive[Background->White,FontFamily->"CMU Serif",FontSize->24,Black],BaseStyle->Directive[FontSize->22,FontFamily->"CMU Serif",InsetBoxOptions->Directive[Background->White]],AxesStyle->Directive[AbsoluteThickness[1],monoColor,FontSize->22,FontFamily->"CMU Serif"],FrameStyle->Directive[AbsoluteThickness[1],monoColor,FontSize->22,FontFamily->"CMU Serif"],TicksStyle->Directive[monoColor,FontSize->22,FontFamily->"CMU Serif"],FrameTicksStyle->Directive[monoColor,FontSize->22,FontFamily->"CMU Serif"],GridLinesStyle->Directive[AbsoluteThickness[0.5],Opacity[0.5]]},$ComponentWeight];
+resolvePlotTheme["AcademicFrame3D",_]:=Themes`SetWeight[{ImageSize->500,Background->White,LabelStyle->Directive[Background->White,FontFamily->"CMU Serif",FontSize->24,Black],BaseStyle->Directive[FontSize->22,FontFamily->"CMU Serif",InsetBoxOptions->Directive[Background->White]],AxesStyle->Directive[AbsoluteThickness[1],monoColor,FontSize->22,FontFamily->"CMU Serif"],TicksStyle->Directive[monoColor,FontSize->22,FontFamily->"CMU Serif"],BoxStyle->monoColor},$ComponentWeight];
 
 (* ----- Size Features ----- *)
 (* 2D plots 180 pts. *)
@@ -66,6 +66,32 @@ resolvePlotTheme["SmallOpenMarkers",def:_String]:=Themes`SetWeight[{PlotMarkers-
 End[];
 $PlotTheme="Academic";(*Set to default plot theme*)
 SetOptions[Plot, LabelStyle -> Directive[Background -> White]];
+
+
+(* === Define a Similar Theme with Larger Size === *)
+Clear["Global`*"]
+
+(* === Load the Defined Academic Theme === *)
+Begin["System`PlotThemeDump`"];
+Themes`ThemeRules;
+
+(* === Define the Large Theme === *)
+resolvePlotTheme["AcademicLarge", def:_String] := Module[
+  {baseTheme},
+  baseTheme = resolvePlotTheme["Academic", def];
+  
+  (* \:4fee\:6539\:56fe\:50cf\:5927\:5c0f\:548c\:5b57\:4f53\:5927\:5c0f *)
+  Themes`SetWeight[
+    baseTheme /. {
+      (ImageSize -> size_) :> (ImageSize -> (1.5 size)), (* \:8c03\:6574\:56fe\:50cf\:5927\:5c0f *)
+      (FontSize -> size_) :> (FontSize -> (1.5 size))    (* \:8c03\:6574\:5b57\:4f53\:5927\:5c0f *)
+    },
+    Themes`$DesignWeight
+  ]
+];
+
+(* \:7ed3\:675f\:81ea\:5b9a\:4e49\:4e3b\:9898\:5b9a\:4e49 *)
+End[];
 
 
 <<PlotFunctions`
