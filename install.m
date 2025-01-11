@@ -59,14 +59,9 @@ FileOverwrite[FileNameJoin[{NotebookDirectory[],"FrontEnd","Cambria Article.nb"}
 		"SystemFiles", "FrontEnd", "StyleSheets","Cambria Article.nb"}]];
 
 
-FileOverwrite[FileNameJoin[{NotebookDirectory[],"FrontEnd","Source Article Serif.nb"}],
+FileOverwrite[FileNameJoin[{NotebookDirectory[],"FrontEnd","Source Article.nb"}],
 	FileNameJoin[{$UserBaseDirectory, 
-		"SystemFiles", "FrontEnd", "StyleSheets","Source Article Serif.nb"}]];
-
-
-FileOverwrite[FileNameJoin[{NotebookDirectory[],"FrontEnd","Source Article Sans.nb"}],
-	FileNameJoin[{$UserBaseDirectory, 
-		"SystemFiles", "FrontEnd", "StyleSheets","Source Article Sans.nb"}]];
+		"SystemFiles", "FrontEnd", "StyleSheets","Source Article.nb"}]];
 
 
 FileOverwrite[FileNameJoin[{NotebookDirectory[],"FrontEnd","Default-Modified.nb"}],
