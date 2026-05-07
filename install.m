@@ -129,3 +129,12 @@ RenameDirectory[extracted[[1]],FileNameJoin[{$UserBaseDirectory,"Applications","
 FileOverwrite[FileNameJoin[{NotebookDirectory[],"Functions","PlotFunctions.wl"}],
 	FileNameJoin[{$UserBaseDirectory, 
 		"Applications","PlotFunctions.wl"}]];
+
+
+(* ::Subsection:: *)
+(*Unit Conversion*)
+
+
+FileOverwrite[FileNameJoin[{NotebookDirectory[],"Functions","Unit.m"}],
+	FileNameJoin[{$UserBaseDirectory, 
+		"Applications","Unit.m"}]];

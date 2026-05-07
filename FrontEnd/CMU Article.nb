@@ -318,9 +318,9 @@ Cell[StyleData["Title"],
  FontVariations->{"StrikeThrough"->False,
  "Underline"->False},
  PrivateFontOptions->{"FontPostScriptName"->"Automatic"},
- FontColor->RGBColor[0., 0., 0.],
- Background->GrayLevel[
-  1],ExpressionUUID->"7f5460f2-ef42-4368-ae44-dbb668e468a6"],
+ FontColor->LightDarkSwitched[RGBColor[0., 0., 0.], Automatic],
+ Background->LightDarkSwitched[GrayLevel[
+  1], Automatic],ExpressionUUID->"7f5460f2-ef42-4368-ae44-dbb668e468a6"],
 
 Cell[StyleData["Title", "Printout"],
  CellMargins->{{10, 10}, {5, 15}},
@@ -1193,9 +1193,9 @@ Cell[StyleData["EditorialComment", StyleDefinitions ->
  StyleData["TextConcrete"]],
  CellFrame->{{2, 2}, {0, 0}},
  MenuSortingValue->2010,
- FontColor->RGBColor[
-  0.790588, 0.201176, 
-   0.],ExpressionUUID->"29a192bb-ab5a-405f-ae4e-febe5630038e"]
+ FontColor->LightDarkSwitched[RGBColor[
+  0.790588, 0.201176,
+   0.], Automatic],ExpressionUUID->"29a192bb-ab5a-405f-ae4e-febe5630038e"]
 }, Open  ]]
 }, Open  ]],
 
@@ -1220,9 +1220,9 @@ Cell[StyleData["Input"],
  FontWeight->"Regular",
  FontSlant->"Plain",
  PrivateFontOptions->{"FontPostScriptName"->"Automatic"},
- Background->RGBColor[
-  0.9272907606622416, 0.9211718928816662, 
-   0.9214160372320134],ExpressionUUID->"7ccb3cfa-5041-43ff-8b0f-db53e6485634"],
+ Background->LightDarkSwitched[RGBColor[
+  0.9272907606622416, 0.9211718928816662,
+   0.9214160372320134], Automatic],ExpressionUUID->"7ccb3cfa-5041-43ff-8b0f-db53e6485634"],
 
 Cell[StyleData["Input", "Printout"],
  ShowCellLabel->False,ExpressionUUID->"c6316ba3-8bda-4db7-a19e-353f8da7508e"]
@@ -1247,8 +1247,8 @@ Cell[StyleData["Code"],
  FontWeight->"Regular",
  FontSlant->"Plain",
  PrivateFontOptions->{"FontPostScriptName"->"Automatic"},
- Background->GrayLevel[
-  0.9],ExpressionUUID->"47ee0d4a-1fcb-4cb8-a967-c31a64016a38"],
+ Background->LightDarkSwitched[GrayLevel[
+  0.9], Automatic],ExpressionUUID->"47ee0d4a-1fcb-4cb8-a967-c31a64016a38"],
 
 Cell[StyleData["Code", "Printout"],ExpressionUUID->"e45fc77c-12fc-48a3-85cf-191cd420173f"]
 }, Open  ]],

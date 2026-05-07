@@ -128,9 +128,9 @@ Cell[StyleData["Title"],
  FontVariations->{"StrikeThrough"->False,
  "Underline"->False},
  PrivateFontOptions->{"FontPostScriptName"->"Automatic"},
- FontColor->RGBColor[
-  0.5019607843137255, 0., 
-   0.],ExpressionUUID->"c48f2c59-ba00-4b6e-b021-960740a04a7b"],
+ FontColor->LightDarkSwitched[RGBColor[
+  0.5019607843137255, 0.,
+   0.], Automatic],ExpressionUUID->"c48f2c59-ba00-4b6e-b021-960740a04a7b"],
 
 Cell[StyleData["Title", "Presentation"],
  CellMargins->{{0, 0}, {15, 45}},
@@ -193,9 +193,9 @@ Cell[StyleData["Subtitle"],
  FontVariations->{"StrikeThrough"->False,
  "Underline"->False},
  PrivateFontOptions->{"FontPostScriptName"->"Automatic"},
- FontColor->RGBColor[
-  0.5019607843137255, 0., 
-   0.],ExpressionUUID->"087da92a-93d4-437c-8ed0-d172e5ff2916"],
+ FontColor->LightDarkSwitched[RGBColor[
+  0.5019607843137255, 0.,
+   0.], Automatic],ExpressionUUID->"087da92a-93d4-437c-8ed0-d172e5ff2916"],
 
 Cell[StyleData["Subtitle", "Presentation"],
  CellMargins->{{0, 0}, {30, 3}},
@@ -257,9 +257,9 @@ Cell[StyleData["Subsubtitle"],
  FontVariations->{"StrikeThrough"->False,
  "Underline"->False},
  PrivateFontOptions->{"FontPostScriptName"->"Automatic"},
- FontColor->RGBColor[
-  0.5019607843137255, 0., 
-   0.],ExpressionUUID->"ccf40d8d-4f50-4824-be63-5878a8d7f312"],
+ FontColor->LightDarkSwitched[RGBColor[
+  0.5019607843137255, 0.,
+   0.], Automatic],ExpressionUUID->"ccf40d8d-4f50-4824-be63-5878a8d7f312"],
 
 Cell[StyleData["Subsubtitle", "Presentation"],
  CellMargins->{{0, 0}, {12, 3}},
@@ -299,9 +299,9 @@ Cell[StyleData["Author"],
  FontSlant->"Plain",
  FontVariations->{"StrikeThrough"->False,
  "Underline"->False},
- FontColor->RGBColor[
-  0.5019607843137255, 0., 
-   0.],ExpressionUUID->"c10860e6-6b7e-40aa-a343-d5b05c2883d7"],
+ FontColor->LightDarkSwitched[RGBColor[
+  0.5019607843137255, 0.,
+   0.], Automatic],ExpressionUUID->"c10860e6-6b7e-40aa-a343-d5b05c2883d7"],
 
 Cell[StyleData["Author", "Presentation"],
  CellMargins->{{30, 30}, {2, 27}},
@@ -449,9 +449,9 @@ Cell[StyleData["Section"],
  FontVariations->{"StrikeThrough"->False,
  "Underline"->False},
  PrivateFontOptions->{"FontPostScriptName"->"Automatic"},
- FontColor->RGBColor[
-  0.5019607843137255, 0., 
-   0.],ExpressionUUID->"96226a31-f214-40f5-8a3e-df99c93ff7b9"],
+ FontColor->LightDarkSwitched[RGBColor[
+  0.5019607843137255, 0.,
+   0.], Automatic],ExpressionUUID->"96226a31-f214-40f5-8a3e-df99c93ff7b9"],
 
 Cell[StyleData["Section", "Presentation"],
  CellFrame->{{0, 0}, {0, 2}},
@@ -517,9 +517,9 @@ Cell[StyleData["Subsection"],
  FontVariations->{"StrikeThrough"->False,
  "Underline"->False},
  PrivateFontOptions->{"FontPostScriptName"->"Automatic"},
- FontColor->RGBColor[
-  0.5019607843137255, 0., 
-   0.],ExpressionUUID->"761e2e4f-ea9a-496f-9a3e-243d135d4f63"],
+ FontColor->LightDarkSwitched[RGBColor[
+  0.5019607843137255, 0.,
+   0.], Automatic],ExpressionUUID->"761e2e4f-ea9a-496f-9a3e-243d135d4f63"],
 
 Cell[StyleData["Subsection", "Presentation"],
  CellMargins->{{60, Inherited}, {12, 18}},
@@ -583,9 +583,9 @@ Cell[StyleData["Subsubsection"],
  FontVariations->{"StrikeThrough"->False,
  "Underline"->False},
  PrivateFontOptions->{"FontPostScriptName"->"Automatic"},
- FontColor->RGBColor[
-  0.5019607843137255, 0., 
-   0.],ExpressionUUID->"ba6cca4d-6d63-4444-ba45-838332f64f8e"],
+ FontColor->LightDarkSwitched[RGBColor[
+  0.5019607843137255, 0.,
+   0.], Automatic],ExpressionUUID->"ba6cca4d-6d63-4444-ba45-838332f64f8e"],
 
 Cell[StyleData["Subsubsection", "Presentation"],
  CellMargins->{{60, Inherited}, {3, 15}},
@@ -646,9 +646,9 @@ Cell[StyleData["Subsubsubsection"],
  FontVariations->{"StrikeThrough"->False,
  "Underline"->False},
  PrivateFontOptions->{"FontPostScriptName"->"Automatic"},
- FontColor->RGBColor[
-  0.5019607843137255, 0., 
-   0.],ExpressionUUID->"40092b6a-dabd-4398-a3dd-ff42f281a833"],
+ FontColor->LightDarkSwitched[RGBColor[
+  0.5019607843137255, 0.,
+   0.], Automatic],ExpressionUUID->"40092b6a-dabd-4398-a3dd-ff42f281a833"],
 
 Cell[StyleData["Subsubsubsection", "Presentation"],
  CellMargins->{{75, Inherited}, {3, 15}},
@@ -708,9 +708,9 @@ Cell[StyleData["Passage"],
  FontVariations->{"StrikeThrough"->False,
  "Underline"->False},
  PrivateFontOptions->{"FontPostScriptName"->"Automatic"},
- FontColor->RGBColor[
-  0.5019607843137255, 0., 
-   0.],ExpressionUUID->"508e67f4-9a1f-4c94-904c-f09e7100f438"],
+ FontColor->LightDarkSwitched[RGBColor[
+  0.5019607843137255, 0.,
+   0.], Automatic],ExpressionUUID->"508e67f4-9a1f-4c94-904c-f09e7100f438"],
 
 Cell[StyleData["Passage", "Presentation"],
  CellMargins->{{75, Inherited}, {3, 15}},
