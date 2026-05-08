@@ -10,7 +10,7 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      6076,        160]
+NotebookDataLength[      6098,        160]
 NotebookOptionsPosition[      3877,        121]
 NotebookOutlinePosition[      4294,        137]
 CellTagsIndexPosition[      4251,        134]
@@ -59,7 +59,7 @@ Cell[StyleData["InlineFormula", StyleDefinitions -> StyleData["Text"]],
  LanguageCategory->"Formula",
  ScriptLevel->1,
  SingleLetterItalics->True,
- FontFamily->"Times New Roman",
+ FontFamily->"Latin Modern Roman",
  FontSize->16,
  FontWeight->"Regular",
  FontSlant->"Plain",
@@ -78,7 +78,7 @@ Cell[StyleData["DisplayFormula", StyleDefinitions -> StyleData["Text"]],
  SingleLetterItalics->True,
  MenuSortingValue->1720,
  MenuCommandKey:>"4",
- FontFamily->"Times New Roman",
+ FontFamily->"Latin Modern Roman",
  FontSize->16,
  FontWeight->"Regular",
  FontSlant->"Plain",
@@ -102,7 +102,7 @@ Cell[StyleData["DisplayFormulaNumbered", StyleDefinitions -> StyleData["Text"]
  CounterIncrements->"DisplayFormulaNumbered",
  MenuSortingValue->1740,
  MenuCommandKey:>"",
- FontFamily->"Times New Roman",
+ FontFamily->"Latin Modern Roman",
  FontSize->16,
  FontWeight->"Regular",
  FontSlant->"Plain",
@@ -111,7 +111,7 @@ Cell[StyleData["DisplayFormulaNumbered", StyleDefinitions -> StyleData["Text"]
   1],ExpressionUUID->"ff32c915-c1ed-431b-b455-d0ce9a49e15f"],
 
 Cell[StyleData["Output"],
- FontFamily->"Times",
+ FontFamily->"Latin Modern Roman",
  FontSize->16,
  FontWeight->"Regular",
  FontSlant->"Plain",
