@@ -66,6 +66,9 @@ resolvePlotTheme["SmallOpenMarkers",def:_String]:=Themes`SetWeight[{PlotMarkers-
 End[];
 $PlotTheme="Academic";(*Set to default plot theme*)
 SetOptions[Plot, LabelStyle -> Directive[Background -> White]];
+(* OperatorSubstitute: prevent font glyph substitution for operators in plot labels *)
+SetOptions[Graphics, BaseStyle -> {PrivateFontOptions -> {"OperatorSubstitute" -> False}}];
+SetOptions[Graphics3D, BaseStyle -> {PrivateFontOptions -> {"OperatorSubstitute" -> False}}];
 
 
 (* === Define a Similar Theme with Larger Size === *)

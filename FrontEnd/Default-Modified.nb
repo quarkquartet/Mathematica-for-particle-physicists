@@ -112,7 +112,7 @@ Cell[StyleData["DisplayFormulaNumbered", StyleDefinitions -> StyleData["Text"]
 
 Cell[StyleData["Output"],
  FontFamily->"Latin Modern Roman",
- FontSize->16,
+ FontSize->18,
  FontWeight->"Regular",
  FontSlant->"Plain",
  PrivateFontOptions->{
