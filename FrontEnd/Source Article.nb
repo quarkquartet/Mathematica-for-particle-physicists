@@ -10,7 +10,7 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     93664,       2326]
+NotebookDataLength[     93680,       2327]
 NotebookOptionsPosition[     60741,       1866]
 NotebookOutlinePosition[     61153,       1882]
 CellTagsIndexPosition[     61110,       1879]
@@ -52,7 +52,6 @@ The options defined for the style below will be used at the Notebook level.\
 \>", "Text",ExpressionUUID->"7cfdf0b9-9027-44cf-a6f0-3ed972472f00"],
 
 Cell[StyleData["Notebook"],
- WindowToolbars->{},
  WindowSize->{400, 400},
  PageHeaders->{{
     Cell[
