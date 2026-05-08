@@ -36,8 +36,8 @@ resolvePlotTheme["AcademicFrame","ChromaticityPlot3D"]:=Themes`SetWeight[Join[{A
 resolvePlotTheme["AcademicFrame",def:"BarChart3D"|"PieChart3D"|"RectangleChart3D"|"SectorChart3D"]:=resolvePlotTheme["AcademicFrame3D",def];
 (* [ Common Axes Features ] *)
 (* Mathematica's working theme:axes and frames too thin,terribly grayish,and tick/label font too small,but grids too thick.All these are fixed in the new theme. *)
-resolvePlotTheme["AcademicFrame2D",_]:=Themes`SetWeight[{ImageSize->500,Background->White,LabelStyle->Directive[Background->White,FontFamily->"Latin Modern Roman",FontSize->20,Black],BaseStyle->Directive[FontSize->20,FontFamily->"Latin Modern Roman",InsetBoxOptions->Directive[Background->White]],AxesStyle->Directive[AbsoluteThickness[1],GrayLevel[0],FontSize->20,FontFamily->"Latin Modern Roman"],FrameStyle->Directive[AbsoluteThickness[1],GrayLevel[0],FontSize->20,FontFamily->"Latin Modern Roman"],TicksStyle->Directive[GrayLevel[0],FontSize->20,FontFamily->"Latin Modern Roman"],FrameTicksStyle->Directive[GrayLevel[0],FontSize->20,FontFamily->"Latin Modern Roman"],GridLinesStyle->Directive[AbsoluteThickness[0.5],Opacity[0.5]]},$ComponentWeight];
-resolvePlotTheme["AcademicFrame3D",_]:=Themes`SetWeight[{ImageSize->500,Background->White,LabelStyle->Directive[Background->White,FontFamily->"Latin Modern Roman",FontSize->20,Black],BaseStyle->Directive[FontSize->20,FontFamily->"Latin Modern Roman",InsetBoxOptions->Directive[Background->White]],AxesStyle->Directive[AbsoluteThickness[1],GrayLevel[0],FontSize->20,FontFamily->"Latin Modern Roman"],TicksStyle->Directive[GrayLevel[0],FontSize->20,FontFamily->"Latin Modern Roman"],BoxStyle->GrayLevel[0]},$ComponentWeight];
+resolvePlotTheme["AcademicFrame2D",_]:=Themes`SetWeight[{ImageSize->500,Background->White,LabelStyle->Directive[Background->White,FontFamily->"Latin Modern Roman",FontSize->25,Black],BaseStyle->Directive[FontSize->25,FontFamily->"Latin Modern Roman",InsetBoxOptions->Directive[Background->White,PrivateFontOptions->{"OperatorSubstitute"->False}]],AxesStyle->Directive[AbsoluteThickness[1.25],GrayLevel[0],FontSize->25,FontFamily->"Latin Modern Roman"],FrameStyle->Directive[AbsoluteThickness[1.25],GrayLevel[0],FontSize->25,FontFamily->"Latin Modern Roman"],TicksStyle->Directive[GrayLevel[0],FontSize->25,FontFamily->"Latin Modern Roman"],FrameTicksStyle->Directive[GrayLevel[0],FontSize->25,FontFamily->"Latin Modern Roman"],GridLinesStyle->Directive[AbsoluteThickness[0.6],Opacity[0.5]]},$ComponentWeight];
+resolvePlotTheme["AcademicFrame3D",_]:=Themes`SetWeight[{ImageSize->500,Background->White,LabelStyle->Directive[Background->White,FontFamily->"Latin Modern Roman",FontSize->25,Black],BaseStyle->Directive[FontSize->25,FontFamily->"Latin Modern Roman",InsetBoxOptions->Directive[Background->White,PrivateFontOptions->{"OperatorSubstitute"->False}]],AxesStyle->Directive[AbsoluteThickness[1.25],GrayLevel[0],FontSize->25,FontFamily->"Latin Modern Roman"],TicksStyle->Directive[GrayLevel[0],FontSize->25,FontFamily->"Latin Modern Roman"],BoxStyle->GrayLevel[0]},$ComponentWeight];
 
 (* ----- Size Features ----- *)
 (* 2D plots 180 pts. *)
@@ -51,10 +51,10 @@ resolvePlotTheme["Figure","NumberLinePlot"|"TimelinePlot"]:={};
 
 (* ----- Style Features ----- *)
 (* Use absolute size. *)
-resolvePlotTheme["AcademicStyle",def:_String]:=Themes`SetWeight[{BaseStyle->{Directive[InsetBoxOptions->Directive[Background->White]]},LabelStyle->Directive[Background->White],"DefaultPlotStyle"->Directive[AbsolutePointSize[4],AbsoluteThickness[1.5]],MeshStyle->Directive[GrayLevel[0],AbsoluteThickness[1]],"DefaultBoundaryStyle"->Directive[GrayLevel[0]]},$LineThicknessWeight];
+resolvePlotTheme["AcademicStyle",def:_String]:=Themes`SetWeight[{BaseStyle->{Directive[InsetBoxOptions->Directive[Background->White,PrivateFontOptions->{"OperatorSubstitute"->False}]]},LabelStyle->Directive[Background->White],"DefaultPlotStyle"->Directive[AbsolutePointSize[5],AbsoluteThickness[2]],MeshStyle->Directive[GrayLevel[0],AbsoluteThickness[1.25]],"DefaultBoundaryStyle"->Directive[GrayLevel[0]]},$LineThicknessWeight];
 (* Special cases *)
-resolvePlotTheme["AcademicStyle","ContourPlot"]:=Themes`SetWeight[{BaseStyle->{Directive[InsetBoxOptions->Directive[Background->White]]},ContourStyle->Directive[Opacity[1],AbsoluteThickness[0.8]],LabelStyle->Directive[Background->White],ExclusionsStyle->{None,Directive[GrayLevel[0],AbsoluteThickness[1]]},"DefaultPlotStyle"->Directive[AbsolutePointSize[4],AbsoluteThickness[1]],MeshStyle->Directive[GrayLevel[0],AbsoluteThickness[1]],"DefaultBoundaryStyle"->Directive[GrayLevel[0]]},$LineThicknessWeight];
-resolvePlotTheme["AcademicStyle","ComplexPlot"]:=Themes`SetWeight[{BaseStyle->{Directive[InsetBoxOptions->Directive[Background->White]]},BoundaryStyle->AbsoluteThickness[1],LabelStyle->Directive[Background->White],"DefaultPlotStyle"->Directive[AbsolutePointSize[4],AbsoluteThickness[1]],MeshStyle->Directive[GrayLevel[0],AbsoluteThickness[1]],"DefaultBoundaryStyle"->Directive[GrayLevel[0]]},$LineThicknessWeight];
+resolvePlotTheme["AcademicStyle","ContourPlot"]:=Themes`SetWeight[{BaseStyle->{Directive[InsetBoxOptions->Directive[Background->White,PrivateFontOptions->{"OperatorSubstitute"->False}]]},ContourStyle->Directive[Opacity[1],AbsoluteThickness[1.0]],LabelStyle->Directive[Background->White],ExclusionsStyle->{None,Directive[GrayLevel[0],AbsoluteThickness[1.25]]},"DefaultPlotStyle"->Directive[AbsolutePointSize[5],AbsoluteThickness[1.25]],MeshStyle->Directive[GrayLevel[0],AbsoluteThickness[1.25]],"DefaultBoundaryStyle"->Directive[GrayLevel[0]]},$LineThicknessWeight];
+resolvePlotTheme["AcademicStyle","ComplexPlot"]:=Themes`SetWeight[{BaseStyle->{Directive[InsetBoxOptions->Directive[Background->White,PrivateFontOptions->{"OperatorSubstitute"->False}]]},BoundaryStyle->AbsoluteThickness[1.25],LabelStyle->Directive[Background->White],"DefaultPlotStyle"->Directive[AbsolutePointSize[5],AbsoluteThickness[1.25]],MeshStyle->Directive[GrayLevel[0],AbsoluteThickness[1.25]],"DefaultBoundaryStyle"->Directive[GrayLevel[0]]},$LineThicknessWeight];
 
 
 (* ----- Point Marker Features ----- *)
@@ -79,12 +79,12 @@ Themes`ThemeRules;
 resolvePlotTheme["AcademicLarge", def:_String] := Module[
   {baseTheme},
   baseTheme = resolvePlotTheme["Academic", def];
-  
-  (* \:4fee\:6539\:56fe\:50cf\:5927\:5c0f\:548c\:5b57\:4f53\:5927\:5c0f *)
   Themes`SetWeight[
     baseTheme /. {
-      (ImageSize -> size_) :> (ImageSize -> (1.5 size)), (* \:8c03\:6574\:56fe\:50cf\:5927\:5c0f *)
-      (FontSize -> size_) :> (FontSize -> (1.5 size))    (* \:8c03\:6574\:5b57\:4f53\:5927\:5c0f *)
+      (ImageSize -> size_) :> (ImageSize -> (1.6 size)),
+      (FontSize -> size_) :> (FontSize -> (1.6 size)),
+      AbsoluteThickness[size_] :> AbsoluteThickness[1.6 size],
+      AbsolutePointSize[size_] :> AbsolutePointSize[1.6 size]
     },
     Themes`$DesignWeight
   ]
