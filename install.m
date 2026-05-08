@@ -65,8 +65,13 @@ FileOverwrite[FileNameJoin[{NotebookDirectory[],"FrontEnd","Source Article.nb"}]
 
 
 FileOverwrite[FileNameJoin[{NotebookDirectory[],"FrontEnd","Default-Modified.nb"}],
-	FileNameJoin[{$UserBaseDirectory, 
+	FileNameJoin[{$UserBaseDirectory,
 		"SystemFiles", "FrontEnd", "StyleSheets","Default-Modified.nb"}]];
+
+
+FileOverwrite[FileNameJoin[{NotebookDirectory[],"FrontEnd","Source Sans Article.nb"}],
+	FileNameJoin[{$UserBaseDirectory,
+		"SystemFiles", "FrontEnd", "StyleSheets","Source Sans Article.nb"}]];
 
 
 (* ::Section:: *)

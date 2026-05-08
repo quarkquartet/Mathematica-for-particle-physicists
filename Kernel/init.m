@@ -36,25 +36,25 @@ resolvePlotTheme["AcademicFrame","ChromaticityPlot3D"]:=Themes`SetWeight[Join[{A
 resolvePlotTheme["AcademicFrame",def:"BarChart3D"|"PieChart3D"|"RectangleChart3D"|"SectorChart3D"]:=resolvePlotTheme["AcademicFrame3D",def];
 (* [ Common Axes Features ] *)
 (* Mathematica's working theme:axes and frames too thin,terribly grayish,and tick/label font too small,but grids too thick.All these are fixed in the new theme. *)
-resolvePlotTheme["AcademicFrame2D",_]:=Themes`SetWeight[{ImageSize->500,Background->White,LabelStyle->Directive[Background->White,FontFamily->"Latin Modern Roman",FontSize->20,Black],BaseStyle->Directive[FontSize->20,FontFamily->"Latin Modern Roman",InsetBoxOptions->Directive[Background->White]],AxesStyle->Directive[AbsoluteThickness[1],monoColor,FontSize->20,FontFamily->"Latin Modern Roman"],FrameStyle->Directive[AbsoluteThickness[1],monoColor,FontSize->20,FontFamily->"Latin Modern Roman"],TicksStyle->Directive[monoColor,FontSize->20,FontFamily->"Latin Modern Roman"],FrameTicksStyle->Directive[monoColor,FontSize->20,FontFamily->"Latin Modern Roman"],GridLinesStyle->Directive[AbsoluteThickness[0.5],Opacity[0.5]]},$ComponentWeight];
-resolvePlotTheme["AcademicFrame3D",_]:=Themes`SetWeight[{ImageSize->500,Background->White,LabelStyle->Directive[Background->White,FontFamily->"Latin Modern Roman",FontSize->20,Black],BaseStyle->Directive[FontSize->20,FontFamily->"Latin Modern Roman",InsetBoxOptions->Directive[Background->White]],AxesStyle->Directive[AbsoluteThickness[1],monoColor,FontSize->20,FontFamily->"Latin Modern Roman"],TicksStyle->Directive[monoColor,FontSize->20,FontFamily->"Latin Modern Roman"],BoxStyle->monoColor},$ComponentWeight];
+resolvePlotTheme["AcademicFrame2D",_]:=Themes`SetWeight[{ImageSize->500,Background->White,LabelStyle->Directive[Background->White,FontFamily->"Latin Modern Roman",FontSize->20,Black],BaseStyle->Directive[FontSize->20,FontFamily->"Latin Modern Roman",InsetBoxOptions->Directive[Background->White]],AxesStyle->Directive[AbsoluteThickness[1],GrayLevel[0],FontSize->20,FontFamily->"Latin Modern Roman"],FrameStyle->Directive[AbsoluteThickness[1],GrayLevel[0],FontSize->20,FontFamily->"Latin Modern Roman"],TicksStyle->Directive[GrayLevel[0],FontSize->20,FontFamily->"Latin Modern Roman"],FrameTicksStyle->Directive[GrayLevel[0],FontSize->20,FontFamily->"Latin Modern Roman"],GridLinesStyle->Directive[AbsoluteThickness[0.5],Opacity[0.5]]},$ComponentWeight];
+resolvePlotTheme["AcademicFrame3D",_]:=Themes`SetWeight[{ImageSize->500,Background->White,LabelStyle->Directive[Background->White,FontFamily->"Latin Modern Roman",FontSize->20,Black],BaseStyle->Directive[FontSize->20,FontFamily->"Latin Modern Roman",InsetBoxOptions->Directive[Background->White]],AxesStyle->Directive[AbsoluteThickness[1],GrayLevel[0],FontSize->20,FontFamily->"Latin Modern Roman"],TicksStyle->Directive[GrayLevel[0],FontSize->20,FontFamily->"Latin Modern Roman"],BoxStyle->GrayLevel[0]},$ComponentWeight];
 
 (* ----- Size Features ----- *)
 (* 2D plots 180 pts. *)
-resolvePlotTheme["Figure",def:_String]:=Themes`SetWeight[{ImageSizeRaw->{{180},{180}},LabelStyle->Directive[monoColor,FontSize->12]},Themes`$SizeWeight];
+resolvePlotTheme["Figure",def:_String]:=Themes`SetWeight[{ImageSizeRaw->{{180},{180}},LabelStyle->Directive[GrayLevel[0],FontSize->12]},Themes`$SizeWeight];
 (* ArrayPlot,MatrixPlot smaller,140 pts. *)
-resolvePlotTheme["Figure","ArrayPlot"|"MatrixPlot"]:=Themes`SetWeight[{ImageSizeRaw->{{140},{140}},LabelStyle->Directive[monoColor,FontSize->12]},Themes`$SizeWeight];
+resolvePlotTheme["Figure","ArrayPlot"|"MatrixPlot"]:=Themes`SetWeight[{ImageSizeRaw->{{140},{140}},LabelStyle->Directive[GrayLevel[0],FontSize->12]},Themes`$SizeWeight];
 (* 3D plots 200 pts. *)
-resolvePlotTheme["Figure",def:_String/;StringMatchQ[def,___~~"3D"]]:=Themes`SetWeight[{LabelStyle->Directive[monoColor,FontSize->12]},Themes`$SizeWeight];
+resolvePlotTheme["Figure",def:_String/;StringMatchQ[def,___~~"3D"]]:=Themes`SetWeight[{LabelStyle->Directive[GrayLevel[0],FontSize->12]},Themes`$SizeWeight];
 (* Size not specified for LinePlots (because they are wide). *)
 resolvePlotTheme["Figure","NumberLinePlot"|"TimelinePlot"]:={};
 
 (* ----- Style Features ----- *)
 (* Use absolute size. *)
-resolvePlotTheme["AcademicStyle",def:_String]:=Themes`SetWeight[{BaseStyle->{Directive[InsetBoxOptions->Directive[Background->White]]},LabelStyle->Directive[Background->White],"DefaultPlotStyle"->Directive[AbsolutePointSize[4],AbsoluteThickness[1.5]],MeshStyle->Directive[monoColor,AbsoluteThickness[1]],"DefaultBoundaryStyle"->Directive[monoColor]},$LineThicknessWeight];
+resolvePlotTheme["AcademicStyle",def:_String]:=Themes`SetWeight[{BaseStyle->{Directive[InsetBoxOptions->Directive[Background->White]]},LabelStyle->Directive[Background->White],"DefaultPlotStyle"->Directive[AbsolutePointSize[4],AbsoluteThickness[1.5]],MeshStyle->Directive[GrayLevel[0],AbsoluteThickness[1]],"DefaultBoundaryStyle"->Directive[GrayLevel[0]]},$LineThicknessWeight];
 (* Special cases *)
-resolvePlotTheme["AcademicStyle","ContourPlot"]:=Themes`SetWeight[{BaseStyle->{Directive[InsetBoxOptions->Directive[Background->White]]},ContourStyle->Directive[Opacity[1],AbsoluteThickness[0.8]],LabelStyle->Directive[Background->White],ExclusionsStyle->{None,Directive[Black,AbsoluteThickness[1]]},"DefaultPlotStyle"->Directive[AbsolutePointSize[4],AbsoluteThickness[1]],MeshStyle->Directive[monoColor,AbsoluteThickness[1]],"DefaultBoundaryStyle"->Directive[monoColor]},$LineThicknessWeight];
-resolvePlotTheme["AcademicStyle","ComplexPlot"]:=Themes`SetWeight[{BaseStyle->{Directive[InsetBoxOptions->Directive[Background->White]]},BoundaryStyle->AbsoluteThickness[1],LabelStyle->Directive[Background->White],"DefaultPlotStyle"->Directive[AbsolutePointSize[4],AbsoluteThickness[1]],MeshStyle->Directive[monoColor,AbsoluteThickness[1]],"DefaultBoundaryStyle"->Directive[monoColor]},$LineThicknessWeight];
+resolvePlotTheme["AcademicStyle","ContourPlot"]:=Themes`SetWeight[{BaseStyle->{Directive[InsetBoxOptions->Directive[Background->White]]},ContourStyle->Directive[Opacity[1],AbsoluteThickness[0.8]],LabelStyle->Directive[Background->White],ExclusionsStyle->{None,Directive[GrayLevel[0],AbsoluteThickness[1]]},"DefaultPlotStyle"->Directive[AbsolutePointSize[4],AbsoluteThickness[1]],MeshStyle->Directive[GrayLevel[0],AbsoluteThickness[1]],"DefaultBoundaryStyle"->Directive[GrayLevel[0]]},$LineThicknessWeight];
+resolvePlotTheme["AcademicStyle","ComplexPlot"]:=Themes`SetWeight[{BaseStyle->{Directive[InsetBoxOptions->Directive[Background->White]]},BoundaryStyle->AbsoluteThickness[1],LabelStyle->Directive[Background->White],"DefaultPlotStyle"->Directive[AbsolutePointSize[4],AbsoluteThickness[1]],MeshStyle->Directive[GrayLevel[0],AbsoluteThickness[1]],"DefaultBoundaryStyle"->Directive[GrayLevel[0]]},$LineThicknessWeight];
 
 
 (* ----- Point Marker Features ----- *)
@@ -95,3 +95,12 @@ End[];
 
 
 <<PlotFunctions`
+
+
+(* Workaround for Mathematica 14.3 bug: DefaultStyleDefinitions set in FrontEnd/init.m
+   is overwritten by FrontEnd preference loading at startup. Setting it from the kernel
+   runs after preferences are fully loaded, so it is not overwritten. *)
+If[$FrontEnd =!= $Failed,
+  SetOptions[$FrontEnd, DefaultStyleDefinitions -> "Source Article.nb"];
+  CurrentValue[$FrontEnd, "DefaultStyleDefinitions"] = "Source Article.nb"
+]

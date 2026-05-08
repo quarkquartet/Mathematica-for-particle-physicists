@@ -64,17 +64,17 @@ TrackCellChangeTimes->False,
 ShowCursorTracker->False,
 ShowPredictiveInterface->False,
 DragAndDrop->False,
-AutoStyleOptions->{"EmphasizedSyntaxErrorStyle"->{FontColor -> RGBColor[0.8, 0., 0.](*, Background -> RGBColor[1., 0.88, 0.51]*)},
-"FunctionLocalVariableStyle"->{FontColor -> RGBColor[0.25098039215686274`, 0.5019607843137255, 0.]},
-"LocalVariableStyle"->{FontColor -> RGBColor[1., 0.5019607843137255, 0.]},
-"OrderOfEvaluationConflictStyle"->{FontColor -> RGBColor[0.8, 0.2, 0.]},
-"PatternVariableStyle"->{FontColor -> RGBColor[0.5019607843137255, 0., 1.], FontSlant -> "Plain"},
-"SymbolShadowingStyle"->{FontColor -> RGBColor[0.8, 0., 0.]},
-"UndefinedSymbolStyle"->{FontColor -> RGBColor[0., 0.5019607843137255, 1.]}},
+AutoStyleOptions->{"EmphasizedSyntaxErrorStyle"->{FontColor -> LightDarkSwitched[RGBColor[0.8, 0., 0.], RGBColor[1., 0.4, 0.4]]},
+"FunctionLocalVariableStyle"->{FontColor -> LightDarkSwitched[RGBColor[0.25098039215686274`, 0.5019607843137255, 0.], RGBColor[0.4, 0.85, 0.2]]},
+"LocalVariableStyle"->{FontColor -> LightDarkSwitched[RGBColor[1., 0.5019607843137255, 0.], RGBColor[1., 0.65, 0.25]]},
+"OrderOfEvaluationConflictStyle"->{FontColor -> LightDarkSwitched[RGBColor[0.8, 0.2, 0.], RGBColor[1., 0.5, 0.25]]},
+"PatternVariableStyle"->{FontColor -> LightDarkSwitched[RGBColor[0.5019607843137255, 0., 1.], RGBColor[0.75, 0.4, 1.]], FontSlant -> "Plain"},
+"SymbolShadowingStyle"->{FontColor -> LightDarkSwitched[RGBColor[0.8, 0., 0.], RGBColor[1., 0.4, 0.4]]},
+"UndefinedSymbolStyle"->{FontColor -> LightDarkSwitched[RGBColor[0., 0.5019607843137255, 1.], RGBColor[0.3, 0.75, 1.]]}},
 CodeAssistOptions->{"AutoPopupEnable"->True,
-"FloatingElementEnable"->False(*,
-"HeadHighlightStyle"->{Background -> RGBColor[0.8, 1., 0.4]},
-"MatchHighlightStyle"->{Background -> RGBColor[1., 0.8, 0.4]}*)},
+"FloatingElementEnable"->False,
+"HeadHighlightStyle"->{Background -> LightDarkSwitched[RGBColor[0.8, 1., 0.4], RGBColor[0.2, 0.4, 0.1]]},
+"MatchHighlightStyle"->{Background -> LightDarkSwitched[RGBColor[1., 0.8, 0.4], RGBColor[0.4, 0.3, 0.1]]}},
 AutoItalicWords->{"Artlandia", "AuthorTools", "CalculationCenter", "Combinatorica", "DatabaseLink", "Geometrica", "Graphica", "GUIKit", "J/Link", "Magnetica", "Mathematica", "MathematicaMark", "MathGroup", "MathLink", "MathLM", "MathModelica", "MathOptimizer", "MathReader", "MathSource", "mathStatica", "MathTensor", "MATHwire", "MathWorld", "MonitorLM", "NET/Link", ".NET/Link", "Optica", "PrimeKit", "Publicon", "SchematicSolver", "ThreeScript", "VisualDSolve"},
 SpellingOptions->{"AutoSpellCheckPopupDelay"->1000,
 "MaxSuggestions"->50},
@@ -82,9 +82,5 @@ SpellingDictionaries->{"CorrectWords"->{"Abrikosov", "anticommute", "Anticommute
 "IncorrectWords"->{},
 "Suggestions"->{}},
 AutoNumberFormatting->True,
-RenderingOptions->{"HardwareAntialiasingQuality"->1.}]
-
-(* Workaround for Mathematica 14.3 bug: DefaultStyleDefinitions is ignored when set
-   inside SetOptions[$FrontEnd, ...]. Using CurrentValue goes through a different
-   code path that is not affected. See: community.wolfram.com/groups/-/m/t/3559599 *)
-CurrentValue[$FrontEnd, "DefaultStyleDefinitions"] = "Default-Modified.nb"
+RenderingOptions->{"HardwareAntialiasingQuality"->1.},
+DefaultStyleDefinitions->"Source Article.nb"]
