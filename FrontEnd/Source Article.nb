@@ -1628,7 +1628,7 @@ Cell[StyleData["Input"],
  FontSlant->"Plain",
  PrivateFontOptions->{"FontPostScriptName"->"Automatic"},
  Background->LightDarkSwitched[
-   GrayLevel[0.966674], 
+   GrayLevel[1],
    GrayLevel[0.3]],ExpressionUUID->"669ce6d4-d225-44a4-8248-6cf9d17dcb48"],
 
 Cell[StyleData["Input", "Presentation"],
